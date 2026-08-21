@@ -1,6 +1,7 @@
 services:
   web:
-    image: nginx:alpine
+    build: .
+    image: practica-nginx-docker:latest
     container_name: practica-nginx
     ports:
       - "8080:80"
